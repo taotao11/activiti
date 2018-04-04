@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/activiti?characterEncoding=utf8&useSSL=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+#自动创建、更新、验证数据库表结构
+  jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+  activiti:
+      databaseSchemaUpdate: true #activiti会对数据库中所有表进行更新操作。如果表不存在，则自动创建
+      dbIdentityUsed: false #检查身份信息表是否存在
+      activityFontName: "宋体" #设置字体
+      labelFontName: "宋体"  #设置字体
+      annotationFontName: "宋体"
+      check-process-definitions: false #自动部署验证
+#      db-identity-used: true org/activiti/db/create/activiti.mysql.create.history.sql activeti sql文件存放
+server:
+  port: 8081
