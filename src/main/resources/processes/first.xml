@@ -15,7 +15,7 @@
     </sequenceFlow>
     <sequenceFlow id="_12" sourceRef="_10" targetRef="_6"/>
     <sequenceFlow id="_13" name="不同意" sourceRef="_5" targetRef="_6">
-      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${message=='不同意'}]]></conditionExpression>
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${message == '不同意'}]]></conditionExpression>
     </sequenceFlow>
   </process>
   <bpmndi:BPMNDiagram documentation="background=#3C3F41;count=1;horizontalcount=1;orientation=0;width=842.4;height=1195.2;imageableWidth=832.4;imageableHeight=1185.2;imageableX=5.0;imageableY=5.0" id="Diagram-_1" name="New Diagram">
@@ -97,7 +97,7 @@
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="_11" id="BPMNEdge__11" sourceElement="_5" targetElement="_10">
         <omgdi:waypoint x="560.0" y="271.0"/>
-        <omgdi:waypoint x="560.0" y="339.0"/>
+        <omgdi:waypoint x="560.0" y="335.0"/>
         <omgdi:waypoint x="560.0" y="375.0"/>
         <bpmndi:BPMNLabel>
           <omgdc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
